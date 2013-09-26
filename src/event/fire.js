@@ -2,7 +2,7 @@ function fire(type, bubbles, cancelable) {
 	var evt;
 	
 	bubbles = getDefault(bubbles, false);
-	cancelable = getDefault(cancelable, false);
+	cancelable = getDefault(cancelable, true);
 	
 	// TODO: Extend this to support multiple Event Modules.
 	// https://developer.mozilla.org/en-US/docs/Web/API/document.createEvent#Notes
