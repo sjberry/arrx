@@ -32,5 +32,5 @@ function init(selector, context) {
 		arr = makeArray(selector);
 	}
 	
-	return makeObj(this, arr);
+	makeArrayLike(this, arr);
 }
