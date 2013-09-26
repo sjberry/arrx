@@ -71,8 +71,6 @@
 	@include "src/storage"
 	var storageCache = window.sessionStorage ? window.sessionStorage : new SessionStorage();
 	
-	var arrayPool = [];
-	var MAX_POOL_SIZE = 50;
 	
 	@include "src"
 	
