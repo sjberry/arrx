@@ -57,7 +57,7 @@
 	// Internal RegExp patterns.
 	var re_id = /^#(\S*)$/;
 	var re_trim = /^\s+|\s+$/g;
-	var re_tagName = /^<(\S+)[^>]*>[\s\S]*<\/\1>$/;
+	//var re_tagName = /^<(\S+)[^>]*>[\s\S]*<\/\1>$/;
 	
 	// Internal reference for creating and addressing objects (specifically event callbacks
 	// and result-set merging which is not yet implemented).
