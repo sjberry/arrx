@@ -1,13 +1,14 @@
 function each(obj, callback) {
+function each(arr, callback) {
 	var i, value;
 	
-	for (i = 0; i < obj.length; i++) {
-		value = callback(obj[i], i);
+	for (i = 0; i < arr.length; i++) {
+		value = callback(arr[i], i);
 		
 		if (value === false) {
 			break;
 		}
 	}
 	
-	return obj;
+	return arr;
 }
