@@ -6,10 +6,10 @@ function position() {
 			x += el.offsetLeft - el.scrollLeft;
 			y += el.offsetTop - el.scrollTop;
 		}
-		while ((el = el.offsetParent) !== document.body)
+		while ((el = el.offsetParent) !== body)
 		
-		x -= Math.max(document.body.scrollLeft, document.documentElement.scrollLeft);
-		y -= Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+		x -= Math.max(body.scrollLeft, documentElement.scrollLeft);
+		y -= Math.max(body.scrollTop, documentElement.scrollTop);
 		
 		return {
 			top: y,
