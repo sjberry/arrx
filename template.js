@@ -69,8 +69,7 @@
 	var callbackCache = {};
 	// WebStorage Cache
 	@include "src/storage"
-	var storageCache = window.sessionStorage ? window.sessionStorage : new SessionStorage();
-	
+	var storageCache = window.sessionStorage || new SessionStorage();
 	
 	@include "src"
 	
