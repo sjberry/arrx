@@ -27,7 +27,8 @@ function release(type, callback) {
 	if (addr.types[type].length === 0) {
 		delete addr.types[type];
 	}
-	if (isEmptyObj(addr.types)) {
+	
+	if (isEmpty(addr.types)) {
 		delete callbackCache[callback.oid];
 	}
 	
