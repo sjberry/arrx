@@ -4,7 +4,7 @@
  * @returns {ArrX} The set of children associated with the first element in the ArrX set.
  */
 function children() {
-	var i, node, el = this[0], children = [];
+	var node, el = this[0], children = [];
 	
 	node = el.firstChild;
 	
