@@ -1,3 +1,3 @@
 function getDefault(obj, def) {
-	return isDefined(obj) ? obj : def;
+	return (typeof obj === 'undefined') ? def : obj;
 }
