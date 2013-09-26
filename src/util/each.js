@@ -1,4 +1,3 @@
-function each(obj, callback) {
 function each(arr, callback) {
 	var i, value;
 	
