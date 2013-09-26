@@ -90,11 +90,13 @@
 		// Iterators
 		each: fneach,
 		
-		// Element Selection
+		// Element Sub-set Selection
 		get: get,
 		eq: eq,
 		first: first,
 		last: last,
+		slice: fnslice,
+		
 		// Element Relationships
 		children: children,
 		
@@ -104,6 +106,7 @@
 		hasClass: hasClass,
 		addClass: addClass,
 		removeClass: removeClass,
+		toggleClass: toggleClass,
 		position: position,
 		
 		// DOM Manipulation
@@ -126,11 +129,27 @@
 	};
 	
 	arrx.extend({
+		// Util
+		ready: ready,
 		noop: noop,
 		each: each,
 		trim: trim,
-		ready: ready,
+		parseHTML: parseHTML,
 		
+		// Types
+		isArray: isArray,
+		isEmpty: isEmpty,
+		isFunction: isFunction,
+		isPlainObject: isPlainObject,
+		makeArray: makeArray,
+		makeArrayLike: makeArrayLike,
+		
+		// URL Toolkit
+		getQueryString: getQueryString,
+		getUrlVars: getUrlVars,
+		getUrlVar: getUrlVar,
+		
+		// WebStorage
 		storage: {
 			set: function(key, value) {
 				storageCache.setItem(key, value);
@@ -145,6 +164,7 @@
 			}
 		},
 		
+		// Web History
 		pushState: (window.history && window.history.pushState) ? pushState : noop,
 		replaceState: (window.history && window.history.replaceState) ? replaceState : noop
 	});
