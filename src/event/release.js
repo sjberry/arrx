@@ -5,8 +5,7 @@ function release(type, callback) {
 		return this;
 	}
 	
-	addr = callbackCache[callback.oid].types[type];
-	if (!addr) {
+	if (!(addr = callbackCache[callback.oid].types[type])) {
 		return this;
 	}
 	
