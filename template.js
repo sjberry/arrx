@@ -98,6 +98,8 @@
 		eq: eq,
 		first: first,
 		last: last,
+		// Element Relationships
+		children: children,
 		
 		// Element Properties
 		attr: attr,
