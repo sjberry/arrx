@@ -1,3 +1,10 @@
+/**
+ * Returns the browser-specific end event based on the provided supported property.
+ *
+ * @private
+ * @param {string} prop The browser-specific property.
+ * @param {string} type The end-event type to scan.
+ */
 function getSupportedEndEvent(prop, type) {
 	var capped, lower;
 	

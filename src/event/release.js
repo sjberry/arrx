@@ -1,6 +1,14 @@
+/**
+ * Unbinds an event listener from the elements in an ArrX set.
+ * 
+ * @param {string} type The event type to unbind from each element.
+ * @param {Function} callback The callback function that should be unbound.
+ * @returns {ArrX} The chainable ArrX set.
+ */
 function release(type, callback) {
 	var addr, result;
 	
+	// FIXME: This is old n' busted. Clean up.
 	if (!isFunction(callback) || !callback.oid) {
 		return this;
 	}

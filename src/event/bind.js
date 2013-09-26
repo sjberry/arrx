@@ -1,3 +1,10 @@
+/**
+ * Binds an event listener to a specified event on each element in an ArrX set.
+ * 
+ * @param {string} type The event type to which a listener should be bound.
+ * @param {Function} callback The callback function that should be executed when the bound event fires on the target element.
+ * @returns {ArrX} The chainable ArrX set.
+ */
 function bind(type, callback) {
 	var addr;
 	
@@ -9,6 +16,7 @@ function bind(type, callback) {
 	
 	type = getDefault(compat.events[type], type);
 	
+	// FIXME: The callback cache and `oid` scheme is a little wonky.
 	if (!callback.oid) {
 		callback.oid = ++gid;
 	}

@@ -13,14 +13,13 @@
  *     "Secrets of the JavaScript Ninja" by John Resig & Bear Bibeault
  * Subject to:
  *     Copyright 2013 Manning Publications Co. All rights Reserved.
- *
  */
 
 
 /*
  * Commentary:
  *
- * This is ArrX. It is a micro (?) js library that is designed for
+ * This is ArrX. It is a micro (?) JavaScript library that is designed for
  * my personal use (but you're free to modify/use it). I aimed to keep it extremely slender
  * by relying heavily on modern ECMAScript standards at the expense of old/obscure browser support.
  *
@@ -31,7 +30,7 @@
  * I'm a fan of jQuery's prototyping elegance, and have retained its design paradigm in three respects:
  *    1) Object instantiation via prototype -- this leaves a very small memory footprint (good practice!)
  *    2) The return object structure -- which is actually just built-in native map objects "spoofed" as arrays.
- *    3) The .extend and .fn.extend flexibility (Retained so as not to bloat the library with site-specific code).
+ *    3) The .extend() and .fn.extend() flexibility (Retained so as not to bloat the library with site-specific code).
  *
  * Past this, I've introduced a substantial amount of my own (old) functionality that has been
  * brought in line with this new format.
@@ -40,7 +39,6 @@
  * it in a production environment. It is designed for and used on my website.
  *
  * http://www.sberry.me/
- *
  */
 
 (function(window, undefined) {	
