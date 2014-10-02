@@ -43,3 +43,7 @@ build
 # NodeJS #
 ##########
 node_modules
+
+# IDE #
+#######
+.idea
