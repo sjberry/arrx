@@ -15,6 +15,8 @@ function prepend(selector, context) {
 	// firstChild = referenceNode.children[0];
 	firstChild = arrx(referenceNode).children().get(0);
 	
+	// TODO: Benchmark this with a document fragment and see if that would yield
+	// computational benefits. Is there a breakeven point for the overhead of the double insert?
 	arrx(selector, context).each(function(el) {
 		referenceNode.insertBefore(el, firstChild);
 	});
